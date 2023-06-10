@@ -2,6 +2,8 @@
 
 This repository provides an example of implementing AJAX search functionality for all custom post types in WordPress.
 
+[![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+
 ## Description
 
 This project demonstrates how to create an AJAX search functionality that allows users to search for content across all custom post types in a WordPress website. The search functionality is performed without page refresh, providing a seamless user experience.
