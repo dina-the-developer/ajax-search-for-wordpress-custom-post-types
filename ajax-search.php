@@ -21,8 +21,12 @@ function ajax_search_handler() {
     while ($query->have_posts()) {
       $query->the_post();
       // Display search results, customise this with your choice of the layout ex. card layout from bootstrap
-      echo '<h2><a href="' . get_permalink() . '">' . get_the_title() . '</a></h2>';
-      echo '<p>' . get_the_excerpt() . '</p>';
+      echo '<div class="card">';
+      echo '<div class="card-body">';
+      echo '<h2 class="card-title"><a href="' . get_permalink() . '">' . get_the_title() . '</a></h2>';
+      echo '<p class="card-text">' . get_the_excerpt() . '</p>';
+      echo '</div>';
+      echo '</div>';
     }
   } else {
     echo '<p>No results found.</p>';
